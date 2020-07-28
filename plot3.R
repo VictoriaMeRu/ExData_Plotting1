@@ -14,7 +14,7 @@ SubMetering3 <- as.numeric(as.character(filterPowerDT$Sub_metering_3))
 plot(dateTime, SubMetering1, type = "l", col = "black", xlab = "", ylab = "Energy sub metering", main = "Energy Sub Metering")
    lines(dateTime, SubMetering2, type = "l", col = "red")
    lines(dateTime, SubMetering3, type = "l", col = "blue")
-   legend("topright", c("SubMetering1", "SubMetering2", "SubMetering3"), lty=1, lwd=1, col=c("black", "red", "blue"))
+   legend("topright", legend=c("SubMetering1", "SubMetering2", "SubMetering3"), cex=0.8, lty=1, lwd=2.5, col=c("black", "red", "blue"))
 
 # Save plot to .png:
 png("plot3.png", width=480, height=480)
